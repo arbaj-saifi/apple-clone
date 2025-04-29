@@ -2,45 +2,99 @@
     margin: 0;
     padding: 0;
 
-box-sizing: border-box;
-font-family: Arial, Helvetica, sans-serif, "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", sans-serif ;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif, "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", sans-serif ;
+}
+a{
+    text-decoration: none;
+    font-size: 0.80rem;
 }
 nav{
-    width: 100vw;
-    height: 50px;
-    margin:  0 auto;
-    background-color: #c9c9c9dc;
-    position: fixed;
-   top:  0;
-   z-index: 10;
-}
-
-.nav_menu svg{
-    fill:#fcfbfbb2;
-    width: 25px;
-    height: 15px;
-    
-}
-.nav_menu h1{
-    color: #fcfbfbef;
-    font-size: 15px;
-    
-    font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.nav_menu{
     width: 100%;
-    max-width: 950px;
-    margin: 0 auto;    
+    height: 60px;
+    background-color: #fffffff5;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.nav-manu{
+    width: 100%;
+    /* background-color: #bdbaba; */
+    max-width: 1250px;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(14, auto);
-    grid-template-rows: 1fr;
-    place-items: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+.logo svg{
+    fill: #000000;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.middle{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.middle a{
+    font-weight: 400;
+    color: #000000;
+}
+.right{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: flex-start;
+}
+.right svg{
+    fill: #000000;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     
 }
-
+.humberger{
+    display: none;
+}
+@media(max-width: 768px) {
+    .middle{
+        display: none;
+    }
+    nav{
+        width: 700px;
+        /* justify-content: center; */
+    }
+    
+    .logo svg{
+        width: 50px;
+        height: 35px;
+    }
+    .right svg{
+        width: 50px;
+        height: 40px;
+    }
+}
 .cantainer-first{
     margin: 0 auto;
     margin-top: 10px;
@@ -57,29 +111,12 @@ nav{
 }
 @media (max-width: 768px) {
     .cantainer-first h1 {
-        font-size: 28px;
-    }
-
-    .cantainer-first h2 {
-        font-size: 18px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .first-button, .second-button {
-        font-size: 14px;
-        padding: 10px 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .cantainer-second h1 {
         font-size: 24px;
     }
-
+    .cantainer-first img {
+        width: 250px;
+        height: 150px;
+    }
     .cantainer-first h2 {
         font-size: 16px;
     }
@@ -93,9 +130,28 @@ nav{
         font-size: 12px;
         padding: 8px 15px;
     }
+}
 
-    .banner-image {
-        max-height: 250px; /* For smaller screens, we keep the image height smaller */
+@media (max-width: 480px) {
+    .cantainer-first h1 {
+        font-size: 20px;
+    }
+    .cantainer-first img {
+        width: 200px;
+        height: 120px;
+    }
+    .cantainer-first h2 {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .first-button, .second-button {
+        font-size: 10px;
+        padding: 6px 12px;
     }
 }
 
@@ -181,7 +237,11 @@ nav{
 }
 @media (max-width: 768px) {
     .cantainer-second h1 {
-        font-size: 28px;
+        font-size: 25px;
+    }
+    .cantainer-second img {
+        width: 300px;
+        height: 150px;
     }
 
     .cantainer-second h2 {
@@ -201,7 +261,12 @@ nav{
 
 @media (max-width: 480px) {
     .cantainer-second h1 {
-        font-size: 24px;
+        font-size: 20px;
+    }
+    .cantainer-second img {
+        width: 150px;
+        height: 120px;
+        object-fit: contain;
     }
 
     .cantainer-second h2 {
@@ -216,10 +281,6 @@ nav{
     .first-button, .second-button {
         font-size: 12px;
         padding: 8px 15px;
-    }
-
-    .banner-image {
-        max-height: 250px; /* For smaller screens, we keep the image height smaller */
     }
 }
 
@@ -242,8 +303,8 @@ nav{
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 .cantainer-second img{
-    width: 1000px;
-    height: 300px;
+    width: 900px;
+    height: 200px;
    
     
     cursor: pointer;
@@ -278,7 +339,10 @@ nav{
     .cantainer-third h1 {
         font-size: 28px;
     }
-
+    .cantainer-third img {
+        width: 200px;
+        height: 100px;
+    }
     .cantainer-third h2 {
         font-size: 18px;
     }
@@ -294,11 +358,16 @@ nav{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .cantainer-third h1 {
         font-size: 24px;
     }
-
+    .cantainer-third img {
+        width: 150px;
+        height: auto;
+        max-height: 90px;
+        object-fit: contain;
+    }
     .cantainer-third h2 {
         font-size: 16px;
     }
@@ -311,10 +380,6 @@ nav{
     .first-button, .second-button {
         font-size: 12px;
         padding: 8px 15px;
-    }
-
-    .banner-image {
-        max-height: 250px; /* For smaller screens, we keep the image height smaller */
     }
 }
 
@@ -337,8 +402,8 @@ nav{
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 .cantainer-third img{
-    width: 1100px;
-    height: 250px;
+    width: 900px;
+    height: 200px;
    
     
     cursor: pointer;
@@ -404,11 +469,14 @@ nav{
 }
 @media (max-width: 768px) {
     .cantainer-iphone h1 {
-        font-size: 28px;
+        font-size: 25px;
     }
-
+    .cantainer-iphone img{
+        width: 400px;
+        height: 200px;
+    }
     .cantainer-iphone- h2 {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .buttons {
@@ -424,11 +492,11 @@ nav{
 
 @media (max-width: 480px) {
     .cantainer-iphone h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .cantainer-iphone h2 {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .buttons {
@@ -437,7 +505,7 @@ nav{
     }
 
     .first-button, .second-button {
-        font-size: 12px;
+        font-size: 10px;
         padding: 8px 15px;
     }
 
@@ -451,7 +519,7 @@ nav{
    width: 100%;
    height: 580px; 
    max-width: 1350px;
-   margin-top: 50px;
+   margin-top: 60px;
    display: grid;
     background: black;
    padding: 30px;
@@ -478,31 +546,16 @@ nav{
 }
 @media (max-width: 768px) {
     .cantainer-iphone-pro h1 {
-        font-size: 28px;
+        font-size: 22px;
     }
-
+    
+    .cantainer-iphone-pro img {
+        width: 350px;
+        height: 180px;
+    }
+    
     .cantainer-iphone-pro h2 {
-        font-size: 18px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .first-button, .second-button {
         font-size: 14px;
-        padding: 10px 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .cantainer-iphone-pro h1 {
-        font-size: 24px;
-    }
-
-    .cantainer-iphone-pro h2 {
-        font-size: 16px;
     }
 
     .buttons {
@@ -514,53 +567,59 @@ nav{
         font-size: 12px;
         padding: 8px 15px;
     }
+}
 
-    .banner-image {
-        max-height: 250px; /* For smaller screens, we keep the image height smaller */
+@media (max-width: 480px) {
+    .cantainer-iphone-pro h1 {
+        font-size: 18px;
+    }
+
+    .cantainer-iphone-pro h2 {
+        font-size: 12px;
+    }
+
+    .cantainer-iphone-pro img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .first-button, .second-button {
+        font-size: 10px;
+        padding: 6px 12px;
     }
 }
-.cantainer-forth{
+
+.cantainer-forth {
     width: 100%;
     max-width: 1350px;
-    height: 550px;
+    height: auto;
     margin: 0 auto;
     margin-top: 8px;
-    /* padding: 3px; */
     gap: 10px;
     display: grid;
     align-items: center;
     justify-content: center;
     text-align: center;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
 }
+
 @media (max-width: 768px) {
-    .cantainer-forth h1 {
-        font-size: 28px;
-    }
-
-    .cantainer-forth h2 {
-        font-size: 18px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .first-button, .second-button {
-        font-size: 14px;
-        padding: 10px 18px;
-    }
-}
-
-@media (max-width: 480px) {
     .cantainer-forth h1 {
         font-size: 24px;
     }
 
     .cantainer-forth h2 {
         font-size: 16px;
+    }
+
+    .cantainer-forth {
+        grid-template-columns: 1fr;
+        height: auto;
     }
 
     .buttons {
@@ -572,15 +631,31 @@ nav{
         font-size: 12px;
         padding: 8px 15px;
     }
+}
 
-    .banner-image {
-        max-height: 250px; /* For smaller screens, we keep the image height smaller */
+@media (max-width: 480px) {
+    .cantainer-forth h1 {
+        font-size: 20px;
+    }
+
+    .cantainer-forth h2 {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .first-button, .second-button {
+        font-size: 10px;
+        padding: 6px 12px;
     }
 }
 
 .first-div{
     margin: 0 auto;
-  color: white;
+   color: white;
    width: 100%;
    max-width: 700px;
    height: 550px; 
