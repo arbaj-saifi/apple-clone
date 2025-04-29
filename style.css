@@ -1,0 +1,1074 @@
+*{
+    margin: 0;
+    padding: 0;
+
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif, "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", sans-serif ;
+}
+nav{
+    width: 100vw;
+    height: 50px;
+    margin:  0 auto;
+    background-color: #c9c9c9dc;
+    position: fixed;
+   top:  0;
+   z-index: 10;
+}
+
+.nav_menu svg{
+    fill:#fcfbfbb2;
+    width: 25px;
+    height: 15px;
+    
+}
+.nav_menu h1{
+    color: #fcfbfbef;
+    font-size: 15px;
+    
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav_menu{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;    
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(14, auto);
+    grid-template-rows: 1fr;
+    place-items: center;
+    cursor: pointer;
+    
+}
+
+.cantainer-first{
+    margin: 0 auto;
+    margin-top: 10px;
+   width: 100%;
+   max-width: 1350px;
+   height: 550px; 
+   display: grid;
+    background: linear-gradient(to bottom, #addfecda, #fcfbfb);
+   padding: 30px;
+   gap: 10px;
+   align-items: center;
+   justify-items: center;
+   text-align: center;
+}
+@media (max-width: 768px) {
+    .cantainer-first h1 {
+        font-size: 28px;
+    }
+
+    .cantainer-first h2 {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first-button, .second-button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cantainer-second h1 {
+        font-size: 24px;
+    }
+
+    .cantainer-first h2 {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .first-button, .second-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .banner-image {
+        max-height: 250px; /* For smaller screens, we keep the image height smaller */
+    }
+}
+
+.cantainer-first img{
+    width: 600px;
+    height: 200px;
+    margin-left: 0;
+    margin-right: 20%;
+    cursor: pointer;
+}
+.cantainer-first h1{
+    font-size: 50px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.cantainer-first h2{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: .007em;
+    line-height: 2px;
+    font-weight: 400;
+   margin-bottom: 4px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.buttons{
+    width: 250px;
+    height: 40px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.first-button{
+    width: 130px;
+    height: 40px;
+    color: #fcfbfb;
+    background-color: blue;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.first-button:hover{
+    background-color: #2626e9;
+}
+.second-button{
+    width: 80px;
+    color: #3b11f5;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0.5px solid #3b11f5;
+    border-radius: 23px;
+    font-size: 15px;
+}
+
+.second-button:hover{
+    background-color: blue;
+    color: white;
+}
+.cantainer-first h3{
+    font-size: 24px;
+    font-weight: 400;
+    background: linear-gradient(to right, #00f, #00fff2b4, #ff0202); /* Blue to Cyan */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cantainer-second{
+    background: black;
+    
+
+    margin: 0 auto;  
+   width: 100%;
+   max-width: 1350px;
+   height: 580px; 
+   display: grid;
+   padding: 30px;
+   gap: 10px;
+   align-items: center;
+   justify-items: center;
+   text-align: center;
+}
+@media (max-width: 768px) {
+    .cantainer-second h1 {
+        font-size: 28px;
+    }
+
+    .cantainer-second h2 {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first-button, .second-button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cantainer-second h1 {
+        font-size: 24px;
+    }
+
+    .cantainer-second h2 {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .first-button, .second-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .banner-image {
+        max-height: 250px; /* For smaller screens, we keep the image height smaller */
+    }
+}
+
+.cantainer-second h1{
+    color: white;
+    font-size: 50px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.cantainer-second h2{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: .007em;
+  
+    font-weight: 400;
+   margin-bottom: 4px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.cantainer-second img{
+    width: 1000px;
+    height: 300px;
+   
+    
+    cursor: pointer;
+}
+.cantainer-second h3{
+    font-size: 26px;
+    font-weight: 400;
+   
+    background: linear-gradient(to right, #00f, #00fff2b4, #ff0202); /* Blue to Cyan */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cantainer-third{
+   
+    background: linear-gradient(to bottom,  #dbbaba, #f1f1d8);
+    margin: 0 auto;
+  
+   width: 100%;
+   height: 580px; 
+   max-width: 1350px;
+   
+   display: grid;
+    /* background: black; */
+    margin-top: 10px;
+   padding: 30px;
+   gap: 10px;
+   align-items: center;
+   justify-items: center;
+   text-align: center; 
+}
+@media (max-width: 768px) {
+    .cantainer-third h1 {
+        font-size: 28px;
+    }
+
+    .cantainer-third h2 {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first-button, .second-button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cantainer-third h1 {
+        font-size: 24px;
+    }
+
+    .cantainer-third h2 {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .first-button, .second-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .banner-image {
+        max-height: 250px; /* For smaller screens, we keep the image height smaller */
+    }
+}
+
+.cantainer-third h1{
+    color: white;
+    font-size: 50px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.cantainer-third h2{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: .007em;
+  
+    font-weight: 400;
+   margin-bottom: 4px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.cantainer-third img{
+    width: 1100px;
+    height: 250px;
+   
+    
+    cursor: pointer;
+}
+.cantainer-third h3{
+    font-size: 26px;
+    font-weight: 400;
+    background: linear-gradient(to right, #3805f3, #033331b4, #ff0202);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.cantainer-iphone{
+    
+    background: linear-gradient(to bottom, #100383, #dddbdbd2);
+    margin: 0 auto;
+  
+   width: 100%;
+   height: 580px; 
+   max-width: 1350px;
+   margin-top: 10px;
+   display: grid;
+    background: black;
+   padding: 30px;
+   gap: 10px;
+   align-items: center;
+   justify-items: center;
+   text-align: center; 
+   
+   
+}
+.cantainer-iphone h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cantainer-iphone h2{
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+}
+.cantainer-iphone .second-button{
+    color: white;
+    border: 0.5px solid white;
+}
+.cantainer-iphone img{
+    width: 900px;
+    height: 250px;
+}
+.cantainer-iphone .second-button:hover{
+    background-color: white;
+    color: black;
+}
+.cantainer-iphone .first-button{
+    color: #000000;
+    background-color: white;
+    border: 0.5px solid white;
+}
+.cantainer-iphone .first-button:hover{
+    background-color: #e9e4e4;
+}
+@media (max-width: 768px) {
+    .cantainer-iphone h1 {
+        font-size: 28px;
+    }
+
+    .cantainer-iphone- h2 {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first-button, .second-button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cantainer-iphone h1 {
+        font-size: 24px;
+    }
+
+    .cantainer-iphone h2 {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .first-button, .second-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .banner-image {
+        max-height: 250px; /* For smaller screens, we keep the image height smaller */
+    }
+}
+.cantainer-iphone-pro{
+    margin: 0 auto;
+  
+   width: 100%;
+   height: 580px; 
+   max-width: 1350px;
+   margin-top: 50px;
+   display: grid;
+    background: black;
+   padding: 30px;
+   gap: 10px;
+   align-items: center;
+   justify-items: center;
+   text-align: center; 
+   
+}
+.cantainer-iphone-pro img{
+    width: 1000px;
+    height: 400px;
+    padding-bottom: 60px;
+}
+.cantainer-iphone-pro h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+}
+.cantainer-iphone-pro h2{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+@media (max-width: 768px) {
+    .cantainer-iphone-pro h1 {
+        font-size: 28px;
+    }
+
+    .cantainer-iphone-pro h2 {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first-button, .second-button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cantainer-iphone-pro h1 {
+        font-size: 24px;
+    }
+
+    .cantainer-iphone-pro h2 {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .first-button, .second-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .banner-image {
+        max-height: 250px; /* For smaller screens, we keep the image height smaller */
+    }
+}
+.cantainer-forth{
+    width: 100%;
+    max-width: 1350px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 8px;
+    /* padding: 3px; */
+    gap: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+@media (max-width: 768px) {
+    .cantainer-forth h1 {
+        font-size: 28px;
+    }
+
+    .cantainer-forth h2 {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first-button, .second-button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cantainer-forth h1 {
+        font-size: 24px;
+    }
+
+    .cantainer-forth h2 {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .first-button, .second-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .banner-image {
+        max-height: 250px; /* For smaller screens, we keep the image height smaller */
+    }
+}
+
+.first-div{
+    margin: 0 auto;
+  color: white;
+   width: 100%;
+   max-width: 700px;
+   height: 550px; 
+   display: grid;
+    background: black;
+   padding: 10px;
+   
+   align-items: center;
+   justify-items: center;
+   text-align: center; 
+}
+.second-div{
+    margin: 0 auto;
+    color: white;
+   width: 100%;
+   max-width: 700px;
+   height: 550px; 
+   display: grid;
+    /* background: black; */
+    background: linear-gradient(to bottom, #d0b0e6, #ffffff);
+  padding: 10px;
+  
+   align-items: center;
+   justify-items: center; 
+   text-align: center; 
+}
+.second-div img{
+    width: 600px;
+    max-width: 400px;
+    height: 300px;
+}
+.first-div img{
+    width: 700px;
+    max-width: 430px;
+    height: 300px;
+}
+.first-div h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.second-div h1{
+   font-size: 50px;
+    font-weight: 500; 
+}
+.first-div h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+.second-div h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+.first-div h3{
+   font-size: 26px;
+   padding-bottom: 20px;
+    font-weight: 400;
+    background: linear-gradient(to right, #00f, #00fff2b4, #ff0202);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.second-div h3{
+   font-size: 26px;
+   padding-bottom: 20px;
+    font-weight: 400;
+    background: linear-gradient(to right, #00f, #00fff2b4, #ff0202);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.cantainer-six1{
+    width: 100%;
+    max-width: 1350px;
+    height: 550px;
+    margin: 0 auto;
+    padding: 2px;
+    margin-top: 10px;
+    
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+@media (max-width: 768px) {
+    .cantainer-six1 h1 {
+        font-size: 28px;
+    }
+
+    .cantainer-six1 h2 {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first-button, .second-button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cantainer-six1 h1 {
+        font-size: 24px;
+    }
+
+    .cantainer-six1 h2 {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .first-button, .second-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .banner-image {
+        max-height: 250px; /* For smaller screens, we keep the image height smaller */
+    }
+}
+.cantainer-six1 .first-div{
+    background-color: #e3e9eb;
+}
+.cantainer-six1 .second-div{
+    background-color: #e3e9ebe8;
+}
+.cantainer-six1 .first-div h1{
+    color: #000000;
+}
+.cantainer-six1 .first-div h2{
+    color: #000000;
+}
+.cantainer-six1 .second-div h1{
+    color: #000000;
+}
+.cantainer-six1 .second-div h2{
+    color: #000000;
+}
+.cantainer-six1 .first-div p{
+    color: #000000;
+}
+.cantainer-six1 .second-div .buttons{
+    margin: 0 auto;
+    
+    place-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.cantainer-seven{
+    width: 100%;
+    max-width: 1350px;
+    height: 550px;
+    margin: 0 auto;
+   padding: 2px;
+   margin-top: 10px; 
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+@media (max-width: 768px) {
+    .cantainer-seven h1 {
+        font-size: 28px;
+    }
+
+    .cantainer-seven h2 {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first-button, .second-button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cantainer-seven h1 {
+        font-size: 24px;
+    }
+
+    .cantainer-seven h2 {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .first-button, .second-button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .banner-image {
+        max-height: 250px; /* For smaller screens, we keep the image height smaller */
+    }
+}
+.cantainer-seven .first-div img{
+    width: 680px;
+    height: 200px;
+}
+.cantainer-seven .second-div img{
+    width: 400px;
+    height: 200px;
+}
+.cantainer-seven .first-div h1{
+    color: #000000;
+}
+.cantainer-seven .first-div h2{
+    color: #000000;
+}
+.cantainer-seven .first-div p{
+    color: #000000;
+}
+.cantainer-seven .first-div{
+    background-color: #d8d5d5;
+}
+.cantainer-seven .second-div h1{
+    color: #000000;
+}
+.cantainer-seven .second-div h2{
+    color: #000000;
+}
+.cantainer-seven .second-div p{
+    color: #000000;
+}
+.cantainer-seven .second-div{
+    background-color: #d8d5d5;
+}
+.slideshow{
+    width: 100%;
+    max-width: 1350px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 0.9s ease;
+    opacity: 0.4;
+    transform: scale(0.85);
+}
+ .swiper-slide-active {
+    width: 1000px !important;
+    opacity: 1 !important;
+    transform: scale(1.05);
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.text-overlay{
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 20px;
+    left: 30px;
+    color: white;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease, transform 0.6s ease;
+}
+.swiper-slide-active .text-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+.text-overlay h2{
+    font-size: 30px;
+    margin: 0;
+}
+.text-overlay p{
+    font-size: 20px;
+    margin: 7px auto;
+}
+.text-overlay button{
+    padding:  10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.slider-continue{
+    max-width: 1350px;
+    margin: 15px auto;
+    overflow: hidden;
+    position:  relative;
+}
+.slider-track{
+    display: flex;
+    width: fit-content;
+    animation: scroll 15s linear infinite;
+}
+.slide{
+    flex: 0 0 30.333%;
+    padding: 8px;
+}
+.slide img{
+    width: 100%;
+    border-radius: 15px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+ @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+}
+ @media (max-width: 768px) {
+        .slide {
+          flex: 0 0 50%;
+        }
+}
+@media (max-width: 480px) {
+        .slide {
+          flex: 0 0 100%;
+        }
+}
+footer{
+    background-color: #dbd4d4;
+    width: 100%;
+    
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 100%;
+    
+    
+}
+.footer-containt{
+    width: 100%;
+    max-width: 980px;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: justify;
+    display: grid;
+    gap: 10px;
+}
+.footer-containt p{
+    font-size: 15px;
+    color: #3d3c3cce;
+    font-weight: 300;
+}
+.footer-links{
+    width: 100%;
+    max-width: 950px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    padding-top: 20px; ;
+    margin:  0 auto;
+    border-top: 0.3px solid #a79696;
+}
+.first-links ul{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    line-height: 30px;
+    text-align: left;
+}
+.first-links li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.first-links h3{
+    text-align: left;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.first-links li{
+    font-size: 13px;
+    color: #413f3f;
+    font-weight: 400;
+}
+.first-links h2{
+    text-align: left;
+    color: #000000;
+   font-size: 13px;
+    font-weight: 500;
+}
+.footer-bottum{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+    text-align: left;
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #413f3f;
+    /* grid-area: 10px; */
+}
+.footer-bottum h2{
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    color: #413f3f;
+}
+.footer-bottum a{
+    font-size: 13px;
+    text-align: left;
+    color: #1e13b1;
+    font-weight: 300;
+}
+.footer-bottum-last{
+    display: flex;
+    width: 100%;
+    max-width: 950px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-divs h1{
+    font-size: 13px;
+    font-weight: 300;
+    color: #413f3f;
+}
+.first-divs a{
+    font-size: 13px;
+    font-weight: 300;
+    color: #313131;
+}
+.second-divs h2{
+    font-size: 14px;
+     font-weight: 300;
+    color: #413f3f;
+}
+.first-divs{
+    display: flex;
+    gap: 15px;
+}
+.arbaj{
+    width: 100%;
+    max-width: 950px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.arbaj h1{
+    font-size: 18px;
+    font-weight: 300;
+    color: #474646;
+    
+}
+.arbaj strong{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff0000;
+}
+.arbaj a{
+    list-style: none;   
+    text-decoration: none;
+}
