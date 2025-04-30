@@ -82,358 +82,365 @@ nav{
         display: none;
     }
     nav{
-        width: 700px;
+        width: 300px;
         /* justify-content: center; */
     }
     
     .logo svg{
-        width: 50px;
-        height: 35px;
+        width: 40px;
+        height: 30px;
     }
     .right svg{
         width: 50px;
-        height: 40px;
+        height: 60px;
+    }
+    .right{
+        width: 80px;
+        
     }
 }
-.cantainer-first{
-    margin: 0 auto;
-    margin-top: 10px;
-   width: 100%;
-   max-width: 1350px;
-   height: 550px; 
-   display: grid;
-    background: linear-gradient(to bottom, #addfecda, #fcfbfb);
-   padding: 30px;
-   gap: 10px;
-   align-items: center;
-   justify-items: center;
-   text-align: center;
+.cantainer-first {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 1350px;
+  height: auto;
+  display: grid;
+  background: linear-gradient(to bottom, #addfecda, #fcfbfb);
+  padding: 30px;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
 }
+
+.cantainer-first h1 {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "SF Pro Display", "Helvetica Neue", sans-serif;
+  letter-spacing: -0.005em;
+}
+
+.cantainer-first h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 4px 0;
+  font-family: "SF Pro Display", "Helvetica Neue", sans-serif;
+}
+
+.cantainer-first h3 {
+  font-size: 24px;
+  font-weight: 400;
+  background: linear-gradient(to right, #00f, #00fff2b4, #ff0202);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cantainer-first img {
+  width: 600px;
+  height: auto;
+  margin-right: 20%;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.first-button {
+  width: 130px;
+  height: 40px;
+  color: #fcfbfb;
+  background-color: blue;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.first-button:hover {
+  background-color: #2626e9;
+}
+
+.second-button {
+  width: 80px;
+  height: 40px;
+  color: #3b11f5;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0.5px solid #3b11f5;
+  border-radius: 23px;
+  font-size: 15px;
+}
+
+.second-button:hover {
+  background-color: blue;
+  color: white;
+}
+
+/* ✅ Media Query for Tablet and Below (768px) */
 @media (max-width: 768px) {
-    .cantainer-first h1 {
-        font-size: 24px;
-    }
-    .cantainer-first img {
-        width: 250px;
-        height: 150px;
-    }
-    .cantainer-first h2 {
-        font-size: 16px;
-    }
+  .cantainer-first {
+    width: 110%;
+    padding: 20px;
+  }
 
-    .buttons {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .first-button, .second-button {
-        font-size: 12px;
-        padding: 8px 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .cantainer-first h1 {
-        font-size: 20px;
-    }
-    .cantainer-first img {
-        width: 200px;
-        height: 120px;
-    }
-    .cantainer-first h2 {
-        font-size: 14px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 6px;
-    }
-
-    .first-button, .second-button {
-        font-size: 10px;
-        padding: 6px 12px;
-    }
-}
-
-.cantainer-first img{
-    width: 600px;
-    height: 200px;
-    margin-left: 0;
-    margin-right: 20%;
-    cursor: pointer;
-}
-.cantainer-first h1{
-    font-size: 50px;
-    line-height: 1.07143;
-    font-weight: 600;
-    letter-spacing: -.005em;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", sans-serif;
-}
-.cantainer-first h2{
+  .cantainer-first h1 {
     font-size: 30px;
-    font-weight: 400;
-    letter-spacing: .007em;
-    line-height: 2px;
-    font-weight: 400;
-   margin-bottom: 4px;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  }
+
+  .cantainer-first h2 {
+    font-size: 18px;
+  }
+
+  .cantainer-first img {
+    width: 90%;
+    margin: 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .first-button, .second-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .cantainer-first h3 {
+    font-size: 18px;
+  }
 }
-.buttons{
-    width: 250px;
-    height: 40px;
-    gap: 30px;
+
+.cantainer-second {
+  background: black;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 1350px;
+  height: auto;
+  display: grid;
+  padding: 30px;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.cantainer-second h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  font-family: "SF Pro Display", "Helvetica Neue", sans-serif;
+}
+
+.cantainer-second h2 {
+  font-size: 30px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 4px;
+  font-family: "SF Pro Display", "Helvetica Neue", sans-serif;
+}
+
+.cantainer-second img {
+  width: 900px;
+  height: auto;
+  cursor: pointer;
+}
+
+.cantainer-second h3 {
+  font-size: 26px;
+  font-weight: 400;
+  background: linear-gradient(to right, #00f, #00fff2b4, #ff0202);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.first-button {
+  width: 130px;
+  height: 40px;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.first-button:hover {
+  background-color: #2626e9;
+}
+
+.second-button {
+  width: 80px;
+  height: 40px;
+  color: #3b11f5;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0.5px solid #3b11f5;
+  border-radius: 23px;
+  font-size: 15px;
+}
+
+.second-button:hover {
+  background-color: blue;
+  color: white;
+}
+
+/* ✅ Responsive for Tablet & Mobile */
+@media (max-width: 768px) {
+  .cantainer-second {
+    width: 110%;
+    padding: 20px;
+  }
+
+  .cantainer-second h1 {
+    font-size: 30px;
+  }
+
+  .cantainer-second h2 {
+    font-size: 18px;
+  }
+
+  .cantainer-second img {
+    width: 90%;
+    margin: 0;
+  }
+
+  .buttons {
     display: grid;
+    flex-direction: column;
     grid-template-columns: 1fr 1fr;
-   
-}
-.first-button{
-    width: 130px;
-    height: 40px;
-    color: #fcfbfb;
-    background-color: blue;
-    cursor: pointer;
-    border: none;
-    border-radius: 20px;
-    font-size: 15px;
-}
-.first-button:hover{
-    background-color: #2626e9;
-}
-.second-button{
-    width: 80px;
-    color: #3b11f5;
-    background-color: transparent;
-    cursor: pointer;
-    border: 0.5px solid #3b11f5;
-    border-radius: 23px;
-    font-size: 15px;
+
+    gap: 10px;
+  }
+
+  .first-button,
+  .second-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .cantainer-second h3 {
+    font-size: 18px;
+  }
 }
 
-.second-button:hover{
-    background-color: blue;
-    color: white;
+.cantainer-third {
+  background: black;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 1350px;
+  height: 550px;
+  display: grid;
+  padding: 30px;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
 }
-.cantainer-first h3{
-    font-size: 24px;
-    font-weight: 400;
-    background: linear-gradient(to right, #00f, #00fff2b4, #ff0202); /* Blue to Cyan */
+
+.cantainer-third h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  font-family: "SF Pro Display", "Helvetica Neue", sans-serif;
+}
+
+.cantainer-third h2 {
+  font-size: 30px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 4px;
+  font-family: "SF Pro Display", "Helvetica Neue", sans-serif;
+}
+
+.cantainer-third img {
+  width: 900px;
+  height: auto;
+  cursor: pointer;
+}
+
+.cantainer-third h3 {
+  font-size: 26px;
+  font-weight: 400;
+  background: linear-gradient(to right, #00f, #00fff2b4, #ff0202);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.cantainer-second{
-    background: black;
-    
 
-    margin: 0 auto;  
-   width: 100%;
-   max-width: 1350px;
-   height: 580px; 
-   display: grid;
-   padding: 30px;
-   gap: 10px;
-   align-items: center;
-   justify-items: center;
-   text-align: center;
-}
+
+
+/* ✅ Responsive for Tablet & Mobile */
 @media (max-width: 768px) {
-    .cantainer-second h1 {
-        font-size: 25px;
-    }
-    .cantainer-second img {
-        width: 300px;
-        height: 150px;
-    }
+  .cantainer-third {
+    width: 110%;
+    height: 350px;
+    padding: 20px;
+  }
 
-    .cantainer-second h2 {
-        font-size: 18px;
-    }
+  .cantainer-third h1 {
+    font-size: 28px;
+  }
 
-    .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .cantainer-third h2 {
+    font-size: 18px;
+  }
 
-    .first-button, .second-button {
-        font-size: 14px;
-        padding: 10px 18px;
-    }
-}
+  .cantainer-third img {
+    width: 90%;
+    height: 300px;
+    margin: 0;
+  }
 
-@media (max-width: 480px) {
-    .cantainer-second h1 {
-        font-size: 20px;
-    }
-    .cantainer-second img {
-        width: 150px;
-        height: 120px;
-        object-fit: contain;
-    }
+  .buttons {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 
-    .cantainer-second h2 {
-        font-size: 16px;
-    }
+  .first-button,
+  .second-button {
+    width: 100%;
+    font-size: 14px;
+  }
 
-    .buttons {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .first-button, .second-button {
-        font-size: 12px;
-        padding: 8px 15px;
-    }
-}
-
-.cantainer-second h1{
-    color: white;
-    font-size: 50px;
-    line-height: 1.07143;
-    font-weight: 600;
-    letter-spacing: -.005em;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", sans-serif;
-}
-.cantainer-second h2{
-    font-size: 30px;
-    color: white;
-    font-weight: 400;
-    letter-spacing: .007em;
-  
-    font-weight: 400;
-   margin-bottom: 4px;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
-.cantainer-second img{
-    width: 900px;
-    height: 200px;
-   
-    
-    cursor: pointer;
-}
-.cantainer-second h3{
-    font-size: 26px;
-    font-weight: 400;
-   
-    background: linear-gradient(to right, #00f, #00fff2b4, #ff0202); /* Blue to Cyan */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.cantainer-third{
-   
-    background: linear-gradient(to bottom,  #dbbaba, #f1f1d8);
-    margin: 0 auto;
-  
-   width: 100%;
-   height: 580px; 
-   max-width: 1350px;
-   
-   display: grid;
-    /* background: black; */
-    margin-top: 10px;
-   padding: 30px;
-   gap: 10px;
-   align-items: center;
-   justify-items: center;
-   text-align: center; 
-}
-@media (max-width: 768px) {
-    .cantainer-third h1 {
-        font-size: 28px;
-    }
-    .cantainer-third img {
-        width: 200px;
-        height: 100px;
-    }
-    .cantainer-third h2 {
-        font-size: 18px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .first-button, .second-button {
-        font-size: 14px;
-        padding: 10px 18px;
-    }
-}
-
-@media (max-width: 400px) {
-    .cantainer-third h1 {
-        font-size: 24px;
-    }
-    .cantainer-third img {
-        width: 150px;
-        height: auto;
-        max-height: 90px;
-        object-fit: contain;
-    }
-    .cantainer-third h2 {
-        font-size: 16px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .first-button, .second-button {
-        font-size: 12px;
-        padding: 8px 15px;
-    }
-}
-
-.cantainer-third h1{
-    color: white;
-    font-size: 50px;
-    line-height: 1.07143;
-    font-weight: 600;
-    letter-spacing: -.005em;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", sans-serif;
-}
-.cantainer-third h2{
-    font-size: 30px;
-    color: white;
-    font-weight: 400;
-    letter-spacing: .007em;
-  
-    font-weight: 400;
-   margin-bottom: 4px;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
-.cantainer-third img{
-    width: 900px;
-    height: 200px;
-   
-    
-    cursor: pointer;
-}
-.cantainer-third h3{
-    font-size: 26px;
-    font-weight: 400;
-    background: linear-gradient(to right, #3805f3, #033331b4, #ff0202);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  .cantainer-third h3 {
+    font-size: 15px;
+  }
 }
 
 
 .cantainer-iphone{
     
     background: linear-gradient(to bottom, #100383, #dddbdbd2);
-    margin: 0 auto;
-  
-   width: 100%;
-   height: 580px; 
-   max-width: 1350px;
-   margin-top: 10px;
-   display: grid;
-    background: black;
-   padding: 30px;
-   gap: 10px;
-   align-items: center;
-   justify-items: center;
-   text-align: center; 
-   
+   margin: 0 auto;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 1350px;
+  height: 580px;
+  display: grid;
+  padding: 30px;
+  /* gap: 10px; */
+  align-items: center;
+  justify-items: center;
+  text-align: center;
    
 }
 .cantainer-iphone h1{
@@ -453,7 +460,7 @@ nav{
 }
 .cantainer-iphone img{
     width: 900px;
-    height: 250px;
+    height: auto;
 }
 .cantainer-iphone .second-button:hover{
     background-color: white;
@@ -468,15 +475,21 @@ nav{
     background-color: #e9e4e4;
 }
 @media (max-width: 768px) {
+    .cantainer-iphone {
+        width: 110%;
+        height: 400px;
+        padding: 20px;
+    }
     .cantainer-iphone h1 {
-        font-size: 25px;
+        font-size: 28px;
     }
     .cantainer-iphone img{
-        width: 400px;
-        height: 200px;
+        width: 90%;
+        height: auto;
+        margin: 0;
     }
-    .cantainer-iphone- h2 {
-        font-size: 15px;
+    .cantainer-iphone h2 {
+        font-size: 18px;
     }
 
     .buttons {
@@ -490,32 +503,9 @@ nav{
     }
 }
 
-@media (max-width: 480px) {
-    .cantainer-iphone h1 {
-        font-size: 20px;
-    }
 
-    .cantainer-iphone h2 {
-        font-size: 15px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .first-button, .second-button {
-        font-size: 10px;
-        padding: 8px 15px;
-    }
-
-    .banner-image {
-        max-height: 250px; /* For smaller screens, we keep the image height smaller */
-    }
-}
 .cantainer-iphone-pro{
     margin: 0 auto;
-  
    width: 100%;
    height: 580px; 
    max-width: 1350px;
@@ -523,7 +513,7 @@ nav{
    display: grid;
     background: black;
    padding: 30px;
-   gap: 10px;
+   gap: 20px;
    align-items: center;
    justify-items: center;
    text-align: center; 
@@ -545,21 +535,30 @@ nav{
     font-weight: 300;
 }
 @media (max-width: 768px) {
+    .cantainer-iphone-pro{
+        width: 110%;
+        height: 400px;
+        padding: 20px;
+        /* gap: 10px; */
+    }
     .cantainer-iphone-pro h1 {
-        font-size: 22px;
+        font-size: 25px;
     }
     
     .cantainer-iphone-pro img {
-        width: 350px;
-        height: 180px;
+        width: 90%;
+        height: 250px;
+        margin: 0;
     }
     
     .cantainer-iphone-pro h2 {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .buttons {
+        display: grid;
         flex-direction: column;
+        grid-template-columns: 1fr 1fr;
         gap: 8px;
     }
 
@@ -569,30 +568,6 @@ nav{
     }
 }
 
-@media (max-width: 480px) {
-    .cantainer-iphone-pro h1 {
-        font-size: 18px;
-    }
-
-    .cantainer-iphone-pro h2 {
-        font-size: 12px;
-    }
-
-    .cantainer-iphone-pro img {
-        width: 300px;
-        height: 150px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 6px;
-    }
-
-    .first-button, .second-button {
-        font-size: 10px;
-        padding: 6px 12px;
-    }
-}
 
 .cantainer-forth {
     width: 100%;
@@ -612,16 +587,16 @@ nav{
     .cantainer-forth h1 {
         font-size: 24px;
     }
-
+    
     .cantainer-forth h2 {
         font-size: 16px;
     }
 
     .cantainer-forth {
+        width: 110%;
         grid-template-columns: 1fr;
-        height: auto;
     }
-
+   
     .buttons {
         flex-direction: column;
         gap: 8px;
@@ -633,25 +608,7 @@ nav{
     }
 }
 
-@media (max-width: 480px) {
-    .cantainer-forth h1 {
-        font-size: 20px;
-    }
 
-    .cantainer-forth h2 {
-        font-size: 14px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 6px;
-    }
-
-    .first-button, .second-button {
-        font-size: 10px;
-        padding: 6px 12px;
-    }
-}
 
 .first-div{
     margin: 0 auto;
@@ -738,6 +695,12 @@ nav{
     grid-template-rows: 1fr;
 }
 @media (max-width: 768px) {
+    .cantainer-six1{
+        width: 110%;
+        grid-template-columns: 1fr;
+        /* height: auto; */
+        /* margin: 0 auto; */
+    }
     .cantainer-six1 h1 {
         font-size: 28px;
     }
@@ -757,29 +720,7 @@ nav{
     }
 }
 
-@media (max-width: 480px) {
-    .cantainer-six1 h1 {
-        font-size: 24px;
-    }
 
-    .cantainer-six1 h2 {
-        font-size: 16px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .first-button, .second-button {
-        font-size: 12px;
-        padding: 8px 15px;
-    }
-
-    .banner-image {
-        max-height: 250px; /* For smaller screens, we keep the image height smaller */
-    }
-}
 .cantainer-six1 .first-div{
     background-color: #e3e9eb;
 }
@@ -823,9 +764,15 @@ nav{
     grid-template-rows: 1fr;
 }
 @media (max-width: 768px) {
+    .cantainer-seven{
+        width: 110%;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
     .cantainer-seven h1 {
         font-size: 28px;
     }
+    
 
     .cantainer-seven h2 {
         font-size: 18px;
@@ -842,29 +789,7 @@ nav{
     }
 }
 
-@media (max-width: 480px) {
-    .cantainer-seven h1 {
-        font-size: 24px;
-    }
 
-    .cantainer-seven h2 {
-        font-size: 16px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .first-button, .second-button {
-        font-size: 12px;
-        padding: 8px 15px;
-    }
-
-    .banner-image {
-        max-height: 250px; /* For smaller screens, we keep the image height smaller */
-    }
-}
 .cantainer-seven .first-div img{
     width: 680px;
     height: 200px;
@@ -908,6 +833,12 @@ nav{
     margin-top: 10px;
     overflow: hidden;
     position: relative;
+}
+@media (max-width: 768px) {
+    .slideshow{
+        width: 110%;
+        /* height: 400px */
+    }
 }
 .swiper{
     width: 100%;
@@ -969,6 +900,12 @@ nav{
     overflow: hidden;
     position:  relative;
 }
+@media (max-width: 768px) {
+    .slider-continue{
+        width: 110%;
+        /* height: 400px; */
+    }
+}
 .slider-track{
     display: flex;
     width: fit-content;
@@ -1004,13 +941,44 @@ nav{
 footer{
     background-color: #dbd4d4;
     width: 100%;
-    
     margin: 0 auto;
     margin-top: 15px;
     height: 100%;
-    
+}
+@media (max-width: 768px) {
+    footer{
+        width: 110%;
+        height: auto;
+        /* height: 400px; */
+    }
+    .footer-containt{
+        width: 100%;
+        padding: 30px;
+        height: auto;
+    }
+    .footer-containt p{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .footer-links{
+        display: none;
+    }
+    .first-links{
+        display: none;
+    }
+    .first-display{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+   
     
 }
+.first-display{
+    display: none;
+    
+}
+
 .footer-containt{
     width: 100%;
     max-width: 980px;
